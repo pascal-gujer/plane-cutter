@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plane Cutter – laser-cut foam gliders</title>
+<meta name="description" content="Generate laser-cut SVG parts (fuselage with wing slots, main wing, tail wing) from scanned foam glider templates and arrange them on a sheet.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">🛩️</span>
+    <div>
+      <h1>Plane Cutter</h1>
+      <p>Turn the foam glider templates into laser-cut parts</p>
+    </div>
+  </div>
+  <div class="topbar-actions">
+    <span class="version" id="version"></span>
+    <button type="button" class="btn btn-primary" id="topbar-export">⬇️ Download sheet SVG</button>
+  </div>
+</header>
+<main class="layout">
+  <aside class="panel" id="panel" aria-label="settings"></aside>
+  <section class="workspace">
+    <div class="toolbar" id="toolbar"></div>
+    <div class="canvas-wrap">
+      <svg id="editor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" tabindex="0" aria-label="sheet editor"></svg>
+    </div>
+    <div class="statusbar" id="statusbar"></div>
+  </section>
+</main>
+<!-- build:scripts (the builder inlines these in order) -->
+<script src="data/templates.js"></script>
+<script src="lib/geometry.js"></script>
+<script src="lib/svg.js"></script>
+<script src="core/parts.js"></script>
+<script src="core/sheet.js"></script>
+<script src="core/exporter.js"></script>
+<script src="ui/files.js"></script>
+<script src="ui/app.js"></script>
+<script src="ui/editor.js"></script>
+<script src="ui/controls.js"></script>
+<script src="ui/main.js"></script>
+</body>
+</html>

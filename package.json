@@ -1,0 +1,22 @@
+{
+  "name": "plane-cutter",
+  "version": "0.1.0",
+  "description": "Generates laser-cut SVGs of foam glider parts (fuselage with wing slots, main wing, tail wing) and lets you arrange them on a sheet.",
+  "private": true,
+  "homepage": "https://pascal-gujer.github.io/plane-cutter/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pascal-gujer/plane-cutter.git"
+  },
+  "scripts": {
+    "trace": "node tools/trace-templates.js",
+    "trace:debug": "node tools/trace-templates.js --debug",
+    "build": "node tools/build.js",
+    "serve": "node tools/serve.js",
+    "test": "node tools/test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
